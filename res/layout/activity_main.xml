@@ -8,24 +8,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
     <TextView
         android:id="@+id/twStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:text="@string/status" />
 
-    <EditText
-        android:id="@+id/eBet"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/twStatus"
-        android:layout_below="@+id/twStatus"
-        android:layout_toLeftOf="@+id/btnGo"
-        android:hint="@string/btnGoHint" >
-
-        <requestFocus />
-    </EditText>
+        android:layout_alignRight="@+id/twStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:orientation="vertical" >
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnGo"
@@ -33,9 +41,25 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/eBet"
         android:layout_alignBottom="@+id/eBet"
-        android:layout_alignRight="@+id/twStatus"
+        android:layout_alignLeft="@+id/linearLayout1"
         android:minWidth="100dp"
         android:onClick="onBtnGo"
         android:text="@string/btnGoText" />
+
+    <EditText
+        android:id="@+id/eBet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/twStatus"
+        android:layout_below="@+id/linearLayout2"
+        android:hint="@string/btnGoHint"
+        android:minHeight="20dp"
+        android:minWidth="100dp"
+        android:padding="10dp"
+        android:paddingRight="30dp"
+        android:paddingTop="50dp" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>

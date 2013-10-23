@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Kő - Papír - Olló -- Balázsosan</string>
+    <string name="app_name">Kő - Papír - Olló &#8212; Balázsosan</string>
     <string name="action_settings">Settings</string>
     <string name="status">Kedves Játékos! Ez itt a Kő - Papír - Olló játék. Ezen a helyen lesznek kiírva az eredmények.</string>
     <string name="btnGoText">Go</string>
     <string name="btnGoHint">K-ő, P-apír, O-lló</string>
-
+    <string name="winsPlayer">A játékos nyert.</string>
+    <string name="winsAndroid">A telefon nyert.</string>
+    <string name="rule1">A papír becsomagolja a követ.</string>
+    <string name="rule2">A kő kicsorbítja az ollót.</string>
+    <string name="rule3">Az olló elvágja a papírt.</string>
+   
 </resources>
