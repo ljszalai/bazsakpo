@@ -1,5 +1,6 @@
 package com.comuv.szalai.bazsakpo;
 
+import java.util.Locale;
 import java.util.Random;
 
 import android.os.Bundle;
@@ -31,7 +32,7 @@ public class MainActivity extends Activity {
 		String NLine = System.getProperty("line.separator");
 		String[] gepVal = {"K", "P", "O", "X"};
 		EditText editText = (EditText) findViewById(R.id.eBet);
-		String jatekos = editText.getText().toString().substring(0, 1).toUpperCase();
+		String jatekos = editText.getText().toString().substring(0, 1).toUpperCase(new Locale("hu", "HU"));
 		int kocka = random.nextInt(3);
 		String gep = gepVal[kocka];
 		String status = "A gép választása: " + gep + "," + NLine + "a játékos választása: " + jatekos + "." 
