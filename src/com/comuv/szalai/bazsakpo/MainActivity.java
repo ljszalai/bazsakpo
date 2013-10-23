@@ -34,8 +34,8 @@ public class MainActivity extends Activity {
 		String jatekos = editText.getText().toString().substring(0, 1).toUpperCase();
 		int kocka = random.nextInt(3);
 		String gep = gepVal[kocka];
-		String status = "A gÈp v·laszt·sa: " + gep + "," + NLine + "a j·tÈkos v·laszt·sa: " + jatekos + "." 
-				+ NLine + "Ez˙ttal nem nyert senki. (0:0)";
+		String status = "A g√©p v√°laszt√°sa: " + gep + "," + NLine + "a j√°t√©kos v√°laszt√°sa: " + jatekos + "."
+				+ NLine + "Ez√∫ttal nem nyert senki. (0:0)";
 		TextView tw = (TextView) findViewById(R.id.twStatus);
 		tw.setText(status.toCharArray(), 0, status.length());
 	}
